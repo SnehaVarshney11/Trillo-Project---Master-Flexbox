@@ -1,0 +1,22 @@
+{
+  "name": "trillo-project---master-flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnehaVarshney11/Trillo-Project---Master-Flexbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnehaVarshney11/Trillo-Project---Master-Flexbox/issues"
+  },
+  "homepage": "https://github.com/SnehaVarshney11/Trillo-Project---Master-Flexbox#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
