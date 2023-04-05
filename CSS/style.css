@@ -63,7 +63,7 @@ body {
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem; }
+  margin-left: 2rem; }
 
 .search {
   flex: 0 0 40%;
@@ -114,11 +114,12 @@ body {
     align-items: center; }
   .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    position: relative; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
-    fill: var(--color-grey-dark-2);
-    position: relative; }
+    fill: var(--color-grey-dark-2); }
   .user-nav__notification {
     font-size: .8rem;
     height: 1.75rem;
@@ -127,7 +128,22 @@ body {
     background-color: var(--color-primary);
     color: #fff;
     position: absolute;
-    top: 0; }
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 1rem; }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-light-4); }
