@@ -260,8 +260,17 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
     &:hover {
         color: var((--color-grey-dark-1));
+
+        span {
+            margin-left: .8rem;
+        }
     }
 
     &:foucs {
@@ -340,10 +349,6 @@
         margin-right: auto;
     }
 
-    &__friends {
-
-    }
-
     &__photo {
         box-sizing: content-box;
         height: 4rem;
@@ -354,5 +359,99 @@
         &:not(:last-child) {
             margin-right: -1.5rem;
         }
+    }
+}
+
+//REVIEWS
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        margin-bottom: 2rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    &__user-box {
+        margin-right: auto;
+    }
+
+    &__user-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .4rem;
+    }
+
+    &__user-date {
+        font-size: 1rem;
+        color: var(--color-grey-dark-3);
+    }
+
+    &__rating {
+        color: var(--color-primary);
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+
+    &::before {
+        content: "\201C"; //quotation mark
+        position: absolute;
+        top: -2.5rem;
+        left: -1rem;
+        line-height: 1;
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        z-index: 1;
+    }
+}
+
+//CTA
+.cta{
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+}
+
+//CTA Btn
+.btn {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    color: #fff;
+
+    &__visible {
+
+    }
+
+    &__invisible {
+
     }
 }
